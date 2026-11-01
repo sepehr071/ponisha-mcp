@@ -1,0 +1,102 @@
+{
+ "data": [
+  {
+   "id": 1,
+   "title": "توسعه‌ نرم‌افزار و آی‌تی",
+   "slug": "dev-and-it",
+   "icon": "software",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  {
+   "id": 2,
+   "title": "محتوا و ترجمه",
+   "slug": "content-and-translation",
+   "icon": "content",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  {
+   "id": 3,
+   "title": "طراحی و خلاقیت",
+   "slug": "design-and-creativity",
+   "icon": "design",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  {
+   "id": 4,
+   "title": "بازاریابی و فروش",
+   "slug": "marketing-and-sales",
+   "icon": "marketing",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  {
+   "id": 5,
+   "title": "کسب‌وکار",
+   "slug": "business",
+   "icon": "business",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  {
+   "id": 6,
+   "title": "مهندسی و معماری",
+   "slug": "engineering-and-architecture",
+   "icon": "architecture",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  {
+   "id": 10,
+   "title": "موارد دیگر",
+   "slug": "other",
+   "icon": "",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  }
+ ]
+}

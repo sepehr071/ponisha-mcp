@@ -1,0 +1,96 @@
+{
+ "data": [
+  {
+   "id": 392990,
+   "rates": null,
+   "quality": 5,
+   "communication": 5,
+   "timeline": 5,
+   "expertise": 5,
+   "hire_again": 5,
+   "comment": "تجربه همکاری بسیار خوبی با این تیم داشتم. از کیفیت کار و روند همکاری رضایت دارم و با اطمینان این تیم رو پیشنهاد می‌کنم.",
+   "user": {
+    "user_id": 734377,
+    "username": "mehrdad2930",
+    "verified": false,
+    "avatar": null,
+    "rank": 0,
+    "is_pro": false,
+    "feedback_count": 2,
+    "feedback_rate": 5,
+    "is_online": false,
+    "current_level": null
+   },
+   "project": {
+    "title": "پیاده‌سازی سایت با استفاده از Next.js و CMS اختصاصی",
+    "id": 628092,
+    "slug": "پیاده‌سازی-سایت-با-استفاده-از-Next.js-و-CMS-اختصاصی"
+   }
+  },
+  {
+   "id": 392968,
+   "rates": null,
+   "quality": 5,
+   "communication": 5,
+   "timeline": 5,
+   "expertise": 5,
+   "hire_again": 5,
+   "comment": "عالی و  بی نظیر",
+   "user": {
+    "user_id": 3102971,
+    "username": "deltaaa",
+    "verified": false,
+    "avatar": null,
+    "rank": 0,
+    "is_pro": false,
+    "feedback_count": 1,
+    "feedback_rate": 5,
+    "is_online": false,
+    "current_level": null
+   },
+   "project": {
+    "title": "طراحی و برنامه‌نویسی بات جهت مدیریت و پیگیری تکالیف آموزشی",
+    "id": 761713,
+    "slug": "طراحی-و-برنامه‌نویسی-بات-جهت-مدیریت-و-پیگیری-تکالیف-آموزشی"
+   }
+  },
+  {
+   "id": 392894,
+   "rates": null,
+   "quality": 5,
+   "communication": 5,
+   "timeline": 5,
+   "expertise": 5,
+   "hire_again": 5,
+   "comment": "بسیار خوش‌رو، متخصص، وقت‌شناس و متعهد. اسکریپت دقیقاً مطابق با جزئیات و منطق مورد نظر من پیاده‌سازی و روی سرور مستقر شد. از همکاری با ایشان کاملاً رضایت دارم و حتماً در پروژه‌های آینده هم با ایشان همکاری خواهم کرد",
+   "user": {
+    "user_id": 4390287,
+    "username": "MasoudHamidii",
+    "verified": false,
+    "avatar": null,
+    "rank": 0,
+    "is_pro": false,
+    "feedback_count": 1,
+    "feedback_rate": 5,
+    "is_online": false,
+    "current_level": null
+   },
+   "project": {
+    "title": "توسعه اسکریپت پایتون جهت مانیتورینگ داده‌های API",
+    "id": 761546,
+    "slug": "توسعه-اسکریپت-پایتون-جهت-مانیتورینگ-داده‌های-API"
+   }
+  }
+ ],
+ "meta": {
+  "pagination": {
+   "total_items": 2000,
+   "total_pages": 134,
+   "current_page": 1,
+   "per_page": 15,
+   "previous_page_url": "",
+   "next_page_url": "http://api.ponisha.ir/api/v1/projects/desks/reviews_by_skill/102?page=2",
+   "path": "http://api.ponisha.ir/api/v1/projects/desks/reviews_by_skill/102"
+  }
+ }
+}

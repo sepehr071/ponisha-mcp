@@ -1,0 +1,95 @@
+{
+ "data": {
+  "id": 762909,
+  "title": "آماده‌سازی تخصصی فایل‌های لایه باز برای چاپ (Prepres",
+  "slug": "آماده‌سازی-تخصصی-فایل‌های-لایه-باز-برای-چاپ-(Prepres",
+  "description": "به یک متخصص مسلط به نرم‌افزار Adobe Illustrator جهت آماده‌سازی و نهایی‌سازی فایل‌های جعبه محصولات برای چاپ نیازمندیم.\n\nتسلط به امور فنی پیش از چاپ (Prepress)، تفکیک لایه‌ها و رنگ‌های چاپی و تهیه خروجی استاندارد و آماده چاپ الزامی است.\n\nلطفاً افراد دارای تخصصی، تجربه مرتبط، نمونه‌کار خود را ارسال کنند.\n\nزمان تحویل: حداکثر تا پایان فردا (شروع فوری)",
+  "freelancer_id": null,
+  "specification": null,
+  "specified_at": null,
+  "amount_min": 1000000,
+  "amount_max": 1500000,
+  "status": "باز",
+  "status_code": 30,
+  "created_at": 1793465507,
+  "employer": {
+   "user_id": 3650403,
+   "username": "Nexdigital",
+   "rank": 0,
+   "tz": null,
+   "lang": null,
+   "avatar": "https://s3.thr1.sotoon.ir/usercontent/3650403/vTUKLlSsgQnRP4pwLKtXO9E12Rq01edlV7ID6oon.png"
+  },
+  "is_employer": false,
+  "files": [],
+  "priority": "ترکیبی از قیمت و کیفیت اهمیت دارد.",
+  "promotions": [],
+  "selection_closed_at": 1795193778,
+  "bidding_ends_at": 1794761778,
+  "accepted_price": 0,
+  "skills": [
+   {
+    "id": 229,
+    "slug": "graphic-design",
+    "title": "طراحی گرافیک",
+    "keywords": "طراحی گرافیک,",
+    "color": "442a06",
+    "status": "فعال",
+    "status_code": 1
+   },
+   {
+    "id": 232,
+    "slug": "adobe-illustrator",
+    "title": "ایلوستریتور (Adobe Illustrator)",
+    "keywords": "Illustrator,ایلیستریتور, ادوبی ایلاستریتر",
+    "color": "c3c3c3",
+    "status": "فعال",
+    "status_code": 1
+   },
+   {
+    "id": 243,
+    "slug": "print",
+    "title": "چاپ",
+    "keywords": "چاپ,",
+    "color": "666666",
+    "status": "فعال",
+    "status_code": 1
+   }
+  ],
+  "skill_category": {
+   "id": 3,
+   "title": "طراحی و خلاقیت",
+   "slug": "design-and-creativity",
+   "icon": "design",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  "skill_sub_category": {
+   "id": 30,
+   "title": "طراحی گرافیک",
+   "slug": "graphic-design",
+   "icon": "",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  "project_bids_count": 9,
+  "coin_needed": 2,
+  "promoted_coin_needed": 20,
+  "remain_promoted_count": 5,
+  "max_promoted_count": 5,
+  "catalog": null,
+  "billboarded_at": null
+ }
+}

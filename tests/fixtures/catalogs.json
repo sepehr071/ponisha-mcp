@@ -1,0 +1,722 @@
+{
+ "data": [
+  {
+   "id": 762,
+   "status": "APPROVED",
+   "title": "طراحی لوگو و هویت بصری برند شما",
+   "slug": "طراحی-لوگو-و-هویت-بصری-برند-شما",
+   "user_id": 557349,
+   "user": {
+    "user_id": 557349,
+    "username": "arvandec",
+    "verified": true,
+    "avatar": "https://s3.thr1.sotoon.ir/usercontent/557349/avatar-54bc1d768b10ba8318aff74189a1c77c.jpg",
+    "rank": 0,
+    "is_pro": false,
+    "feedback_count": 79,
+    "feedback_rate": 4.756962025316456,
+    "is_online": false,
+    "current_level": {
+     "level": "TOP_FREELANCER",
+     "level_fa": "فریلنسر برتر"
+    }
+   },
+   "skill_category_id": 33,
+   "skill_category": {
+    "id": 33,
+    "title": "طراحی لوگو",
+    "slug": "logo-design",
+    "icon": "",
+    "item_price": {
+     "price": "299000",
+     "discount": 0,
+     "discount_price": 0,
+     "fulltime_discount": 53,
+     "fulltime_discount_price": 2900000,
+     "is_mandatory_fulltime": false
+    }
+   },
+   "basic_delivery_days": 10,
+   "basic_price": 5000000,
+   "display_price": 5000000,
+   "display_time": "10 روز",
+   "freelancer_project_capacity": 8,
+   "description": "تیم حرفه‌ای ما با سال‌ها تجربه در زمینه طراحی لوگو، آماده است تا هویت بصری منحصر به فردی را برای کسب‌وکار شما خلق کند. ما طیف وسیعی از سبک‌های طراحی لوگو را پوشش می‌دهیم و با استفاده از خلاقیت و دانش فنی خود، لوگویی متناسب با برند و اهداف شما طراحی خواهیم کرد. با ما، لوگویی خواهید داشت که نه تنها جذاب و به یاد ماندنی است، بلکه به طور مؤثری ارزش‌ها و شخصیت برندتان را منتقل می‌کند. از طراحی لوگوهای مینیمال و مدرن گرفته تا لوگوهای کلاسیک و پیچیده، ما همه نیازهای شما را برطرف خواهیم کرد. با قیمت‌های مناسب و خدماتی باکیفیت، فرصت را از دست ندهید و به ما بپیوندید تا برندتان را به اوج موفقیت برسانیم.",
+   "deliverable_items": [
+    "فایل لوگو با فرمت های  (Ai,JPG,PNG,SVG)",
+    "موکاپ لوگو",
+    "حالات لایت و دارک لوگو و پالت رنگی برند شما"
+   ],
+   "requirements": [
+    "در ابتدای انجام طراحی در یک فرم با پرسش چند سوال سلیقه شما و خواسته های شما دریافت میشود"
+   ],
+   "industries": [
+    {
+     "id": 3,
+     "title": "برند شخصی"
+    },
+    {
+     "id": 6,
+     "title": "آموزش"
+    },
+    {
+     "id": 9,
+     "title": "املاک"
+    },
+    {
+     "id": 12,
+     "title": "خدمات عمومی"
+    },
+    {
+     "id": 15,
+     "title": "تجارت و کسب و کار"
+    },
+    {
+     "id": 18,
+     "title": "دولتی"
+    },
+    {
+     "id": 21,
+     "title": "صنعتی"
+    },
+    {
+     "id": 24,
+     "title": "غذایی"
+    },
+    {
+     "id": 27,
+     "title": "پزشکی و سلامت"
+    },
+    {
+     "id": 30,
+     "title": "فناوری اطلاعات"
+    },
+    {
+     "id": 33,
+     "title": "کشاورزی"
+    },
+    {
+     "id": 36,
+     "title": "حقوقی"
+    },
+    {
+     "id": 39,
+     "title": "خرده فروشی و کالاهای مصرفی"
+    },
+    {
+     "id": 42,
+     "title": "رسانه و سرگرمی"
+    },
+    {
+     "id": 45,
+     "title": "ورزش و تفریحات"
+    },
+    {
+     "id": 48,
+     "title": "گردشگری"
+    },
+    {
+     "id": 51,
+     "title": "فروش و بازاریابی"
+    },
+    {
+     "id": 54,
+     "title": "مد و زیبایی"
+    },
+    {
+     "id": 57,
+     "title": "معدن"
+    },
+    {
+     "id": 60,
+     "title": "مهندسی و معماری"
+    },
+    {
+     "id": 63,
+     "title": "حمل و نقل و لجستیک"
+    }
+   ],
+   "extra_services": [
+    {
+     "id": 2313,
+     "title": "طراحی لوگو ترکیبی",
+     "description": "بخش دوم لوگو شما (برای لوگوهایی که شامل نماد و لوگوتایپ هستند)",
+     "price": 5000000,
+     "required_time": 10,
+     "required_time_in_day_unit": 10,
+     "time_unit": "DAY",
+     "max_order_allowed": 1,
+     "catalog_id": 762
+    },
+    {
+     "id": 2316,
+     "title": "طراحی کارت ویزیت",
+     "description": "کارت ویزیرت ۲ رو",
+     "price": 1500000,
+     "required_time": 3,
+     "required_time_in_day_unit": 3,
+     "time_unit": "DAY",
+     "max_order_allowed": 1,
+     "catalog_id": 762
+    },
+    {
+     "id": 2319,
+     "title": "طراحی کارت سربرگ",
+     "description": "۲ سایز",
+     "price": 1200000,
+     "required_time": 3,
+     "required_time_in_day_unit": 3,
+     "time_unit": "DAY",
+     "max_order_allowed": 1,
+     "catalog_id": 762
+    },
+    {
+     "id": 2322,
+     "title": "طراحی پاکت",
+     "description": "۲ سایز",
+     "price": 1200000,
+     "required_time": 3,
+     "required_time_in_day_unit": 3,
+     "time_unit": "DAY",
+     "max_order_allowed": 1,
+     "catalog_id": 762
+    }
+   ],
+   "properties": [
+    {
+     "id": 3,
+     "title": "سبک",
+     "is_categorizable": true,
+     "is_boolean": false,
+     "values": [
+      {
+       "id": 3,
+       "title": "مینیمال (Minimalist)",
+       "property_id": 3
+      },
+      {
+       "id": 6,
+       "title": "کاراکتر (Mascot)",
+       "property_id": 3
+      },
+      {
+       "id": 9,
+       "title": "سه‌بعدی (3D)",
+       "property_id": 3
+      },
+      {
+       "id": 12,
+       "title": "امضایی (Signature)",
+       "property_id": 3
+      },
+      {
+       "id": 15,
+       "title": "دست‌نویس (Hand-Drawn)",
+       "property_id": 3
+      },
+      {
+       "id": 18,
+       "title": "وینتیج (Vintage)",
+       "property_id": 3
+      },
+      {
+       "id": 21,
+       "title": "آبرنگی (Watercolor)",
+       "property_id": 3
+      },
+      {
+       "id": 24,
+       "title": "لوگوتایپ (Logotype)",
+       "property_id": 3
+      },
+      {
+       "id": 27,
+       "title": "برندمارک (Brandmark)",
+       "property_id": 3
+      },
+      {
+       "id": 30,
+       "title": "وردمارک (Wordmark)",
+       "property_id": 3
+      },
+      {
+       "id": 33,
+       "title": "لترمارک (Lettermark)",
+       "property_id": 3
+      },
+      {
+       "id": 36,
+       "title": "هندسی (Geometric)",
+       "property_id": 3
+      }
+     ]
+    },
+    {
+     "id": 6,
+     "title": "تعداد اتود اولیه",
+     "is_categorizable": false,
+     "is_boolean": false,
+     "values": [
+      {
+       "id": 48,
+       "title": "5",
+       "property_id": 6
+      }
+     ]
+    },
+    {
+     "id": 9,
+     "title": "تعداد ویرایش (revision)",
+     "is_categorizable": false,
+     "is_boolean": false,
+     "values": [
+      {
+       "id": 96,
+       "title": "5",
+       "property_id": 9
+      }
+     ]
+    }
+   ],
+   "skills": [
+    {
+     "id": 226,
+     "slug": "catalog-design",
+     "title": "طراحی کاتالوگ",
+     "keywords": "طراحی کاتالوگ,",
+     "color": "73470a",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 236,
+     "slug": "logo-design",
+     "title": "طراحی لوگو",
+     "keywords": "طراحی آرم,لوگو, طراحی لوگو",
+     "color": "a1a1a1",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 278,
+     "slug": "electrical-engineering",
+     "title": "",
+     "keywords": "مهندسی برق,",
+     "color": "d7ff88",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 1369,
+     "slug": "office-set-design",
+     "title": "طراحی ست اداری",
+     "keywords": "طراحی ست اداری, Office Set Design",
+     "color": "FBC932",
+     "status": "فعال",
+     "status_code": 1
+    }
+   ],
+   "cover": {
+    "name": "download.jpeg",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12309/download.jpeg"
+   },
+   "work_samples": [
+    {
+     "name": "طراحی لوگوی شبنم سلولز - تولید کننده جعبه",
+     "url": "https://s3.thr1.sotoon.ir/catalog/12312/download.jpeg"
+    },
+    {
+     "name": "طراحی لوگو فیلم تومدیا- وبسایت فیلم",
+     "url": "https://s3.thr1.sotoon.ir/catalog/12315/download.jpeg"
+    },
+    {
+     "name": "طراحی لوگو و کاتالوگ نجار ابزار",
+     "url": "https://s3.thr1.sotoon.ir/catalog/12318/download.jpeg"
+    },
+    {
+     "name": "طراحی لوگوپتوس- حوزه پوشاک",
+     "url": "https://s3.thr1.sotoon.ir/catalog/12321/download.jpeg"
+    },
+    {
+     "name": "طراحی لوگو پوکمون - وبسایت بازی",
+     "url": "https://s3.thr1.sotoon.ir/catalog/12324/download.jpeg"
+    }
+   ],
+   "service": {
+    "id": 33,
+    "title": "طراحی لوگو",
+    "slug": "professional-logo-design",
+    "url": "/services/professional-logo-design",
+    "icon": ""
+   }
+  },
+  {
+   "id": 759,
+   "status": "APPROVED",
+   "title": "تایپ فارسی حرفه‌ای و فوری",
+   "slug": "تایپ-فارسی-حرفه‌ای-و-فوری",
+   "user_id": 3041481,
+   "user": {
+    "user_id": 3041481,
+    "username": "Ftmeh81",
+    "verified": true,
+    "avatar": "https://s3.thr1.sotoon.ir/usercontent/3041481/4p2NgozgrR3T9NB6RMEqP8XAVmLTTaEN7jZpbiEe.png",
+    "rank": 0,
+    "is_pro": false,
+    "feedback_count": 0,
+    "feedback_rate": 0,
+    "is_online": false,
+    "current_level": {
+     "level": "LEVEL_0_FREELANCER",
+     "level_fa": "فریلنسر سطح ۰"
+    }
+   },
+   "skill_category_id": 56,
+   "skill_category": {
+    "id": 56,
+    "title": "تایپ",
+    "slug": "type",
+    "icon": "",
+    "item_price": {
+     "price": "299000",
+     "discount": 39,
+     "discount_price": 114000,
+     "fulltime_discount": 53,
+     "fulltime_discount_price": 2900000,
+     "is_mandatory_fulltime": false
+    }
+   },
+   "basic_delivery_days": 0,
+   "basic_price": 0,
+   "display_price": 9000,
+   "display_time": "30 دقیقه",
+   "freelancer_project_capacity": 2,
+   "description": "انجام پروژه با کمترین تایم و مناسب ترین هزینه با کیفیت عالی",
+   "deliverable_items": [
+    "Word,pdf"
+   ],
+   "requirements": [
+    "مدت زمان",
+    "هزینه بودجه",
+    "اطلاعات درباره پروژه"
+   ],
+   "industries": [],
+   "extra_services": [
+    {
+     "id": 2298,
+     "title": "به ازای هر صفحه",
+     "description": "",
+     "price": 9000,
+     "required_time": 30,
+     "required_time_in_day_unit": 0.1,
+     "time_unit": "MINUTE",
+     "max_order_allowed": 1000000,
+     "catalog_id": 759
+    },
+    {
+     "id": 2301,
+     "title": "به ازای هر ۱۰۰ کلمه",
+     "description": "",
+     "price": 9000,
+     "required_time": 30,
+     "required_time_in_day_unit": 0.1,
+     "time_unit": "MINUTE",
+     "max_order_allowed": 1000000,
+     "catalog_id": 759
+    },
+    {
+     "id": 2304,
+     "title": "به ازای هر ۵ دقیقه فایل صوتی",
+     "description": "",
+     "price": 30000,
+     "required_time": 60,
+     "required_time_in_day_unit": 0.2,
+     "time_unit": "MINUTE",
+     "max_order_allowed": 1000000,
+     "catalog_id": 759
+    }
+   ],
+   "properties": [
+    {
+     "id": 144,
+     "title": "زبان",
+     "is_categorizable": false,
+     "is_boolean": false,
+     "values": [
+      {
+       "id": 1410,
+       "title": "فارسی",
+       "property_id": 144
+      }
+     ]
+    },
+    {
+     "id": 147,
+     "title": "نوع متن",
+     "is_categorizable": true,
+     "is_boolean": false,
+     "values": [
+      {
+       "id": 1419,
+       "title": "تایپ عادی (Plain Text Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1425,
+       "title": "تایپ ریاضی و فرمول نویسی (Mathematical Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1428,
+       "title": "تایپ ادبی (Literary Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1434,
+       "title": "تایپ مستندات رسمی (Formal Document Typing)",
+       "property_id": 147
+      }
+     ]
+    },
+    {
+     "id": 150,
+     "title": "فایل نهایی بدون اشتباه املایی و نگارشی",
+     "is_categorizable": false,
+     "is_boolean": true,
+     "values": [
+      {
+       "id": 1437,
+       "title": "1",
+       "property_id": 150
+      }
+     ]
+    }
+   ],
+   "skills": [
+    {
+     "id": 173,
+     "slug": "type",
+     "title": "تایپ",
+     "keywords": "تایپ",
+     "color": "f6220c",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 512,
+     "slug": "typing",
+     "title": "تایپ",
+     "keywords": "تایپ",
+     "color": "a1a1a1",
+     "status": "فعال",
+     "status_code": 1
+    }
+   ],
+   "cover": {
+    "name": "download.jpeg",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12219/download.jpeg"
+   },
+   "work_samples": [
+    {
+     "name": "فرمول نویسی و جزوه",
+     "url": "https://s3.thr1.sotoon.ir/catalog/12222/download.pdf"
+    }
+   ],
+   "service": {
+    "id": 56,
+    "title": "تایپ",
+    "slug": "typing",
+    "url": "/services/typing",
+    "icon": ""
+   }
+  },
+  {
+   "id": 756,
+   "status": "APPROVED",
+   "title": "perfect English  Typing with Attention to Detail ",
+   "slug": "perfect-English--Typing-with-Attention-to-Detail",
+   "user_id": 708396,
+   "user": {
+    "user_id": 708396,
+    "username": "mahyamahdlo",
+    "verified": true,
+    "avatar": "https://s3.thr1.sotoon.ir/usercontent/708396/avatar-c9a17588d0ab35d42e395ed79f0fb1ed.jpg",
+    "rank": 0,
+    "is_pro": false,
+    "feedback_count": 23,
+    "feedback_rate": 4.817391304347826,
+    "is_online": false,
+    "current_level": {
+     "level": "LEVEL_1_FREELANCER",
+     "level_fa": "فریلنسر سطح ۱"
+    }
+   },
+   "skill_category_id": 56,
+   "skill_category": {
+    "id": 56,
+    "title": "تایپ",
+    "slug": "type",
+    "icon": "",
+    "item_price": {
+     "price": "299000",
+     "discount": 39,
+     "discount_price": 114000,
+     "fulltime_discount": 53,
+     "fulltime_discount_price": 2900000,
+     "is_mandatory_fulltime": false
+    }
+   },
+   "basic_delivery_days": 0,
+   "basic_price": 0,
+   "display_price": 25000,
+   "display_time": "30 دقیقه",
+   "freelancer_project_capacity": 3,
+   "description": "هدف رضایت کارفرماست و انجام پروژه با دقت و کیفیت بالا ",
+   "deliverable_items": [
+    "Word , pdf"
+   ],
+   "requirements": [
+    "توضیحات کامل توسط کارفرما راجع به پروژه و زمان تحویل"
+   ],
+   "industries": [],
+   "extra_services": [
+    {
+     "id": 2292,
+     "title": "به ازای هر صفحه",
+     "description": "",
+     "price": 20000,
+     "required_time": 30,
+     "required_time_in_day_unit": 0.1,
+     "time_unit": "MINUTE",
+     "max_order_allowed": 1000000,
+     "catalog_id": 756
+    },
+    {
+     "id": 2295,
+     "title": "به ازای هر ۱۰۰ کلمه",
+     "description": "",
+     "price": 25000,
+     "required_time": 30,
+     "required_time_in_day_unit": 0.1,
+     "time_unit": "MINUTE",
+     "max_order_allowed": 1000000,
+     "catalog_id": 756
+    }
+   ],
+   "properties": [
+    {
+     "id": 144,
+     "title": "زبان",
+     "is_categorizable": false,
+     "is_boolean": false,
+     "values": [
+      {
+       "id": 1413,
+       "title": "انگلیسی",
+       "property_id": 144
+      }
+     ]
+    },
+    {
+     "id": 147,
+     "title": "نوع متن",
+     "is_categorizable": true,
+     "is_boolean": false,
+     "values": [
+      {
+       "id": 1419,
+       "title": "تایپ عادی (Plain Text Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1422,
+       "title": "تایپ فنی و تخصصی (Technical Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1425,
+       "title": "تایپ ریاضی و فرمول نویسی (Mathematical Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1428,
+       "title": "تایپ ادبی (Literary Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1431,
+       "title": "تایپ گرافیکی (Graphic Typing)",
+       "property_id": 147
+      },
+      {
+       "id": 1434,
+       "title": "تایپ مستندات رسمی (Formal Document Typing)",
+       "property_id": 147
+      }
+     ]
+    },
+    {
+     "id": 150,
+     "title": "فایل نهایی بدون اشتباه املایی و نگارشی",
+     "is_categorizable": false,
+     "is_boolean": true,
+     "values": [
+      {
+       "id": 1437,
+       "title": "1",
+       "property_id": 150
+      }
+     ]
+    }
+   ],
+   "skills": [
+    {
+     "id": 173,
+     "slug": "type",
+     "title": "تایپ",
+     "keywords": "تایپ",
+     "color": "f6220c",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 512,
+     "slug": "typing",
+     "title": "تایپ",
+     "keywords": "تایپ",
+     "color": "a1a1a1",
+     "status": "فعال",
+     "status_code": 1
+    }
+   ],
+   "cover": {
+    "name": "download.jpeg",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12213/download.jpeg"
+   },
+   "work_samples": [
+    {
+     "name": "تایپ متون انگلیسی",
+     "url": "https://s3.thr1.sotoon.ir/catalog/12216/download.pdf"
+    }
+   ],
+   "service": {
+    "id": 56,
+    "title": "تایپ",
+    "slug": "typing",
+    "url": "/services/typing",
+    "icon": ""
+   }
+  }
+ ],
+ "meta": {
+  "pagination": {
+   "total_items": 3,
+   "total_pages": 1,
+   "current_page": 1,
+   "per_page": 15,
+   "previous_page_url": "",
+   "next_page_url": "http://api.ponisha.ir/api/v1/catalogs?page=2",
+   "path": "http://api.ponisha.ir/api/v1/catalogs"
+  }
+ }
+}

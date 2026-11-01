@@ -1,0 +1,369 @@
+{
+ "data": {
+  "id": 762,
+  "status": "APPROVED",
+  "title": "طراحی لوگو و هویت بصری برند شما",
+  "slug": "طراحی-لوگو-و-هویت-بصری-برند-شما",
+  "user_id": 557349,
+  "user": {
+   "user_id": 557349,
+   "username": "arvandec",
+   "verified": true,
+   "avatar": "https://s3.thr1.sotoon.ir/usercontent/557349/avatar-54bc1d768b10ba8318aff74189a1c77c.jpg",
+   "rank": 0,
+   "is_pro": false,
+   "feedback_count": 79,
+   "feedback_rate": 4.756962025316456,
+   "profile": {
+    "languages": [
+     1,
+     2,
+     3
+    ],
+    "name_verified": "تایید شده",
+    "city": {
+     "name": "Isfahan",
+     "id": 418863
+    },
+    "marriage_status": "SINGLE",
+    "birth_date": 1560297600,
+    "job_description": "ما در آروند فقط سایت نمی‌سازیم؛ برای حضور جدی کسب‌وکارها در فضای آنلاین مسیر رشد می‌سازیم.\nآروند، فریلنسر برتر پونیشا، یک تیم تخصصی در سه حوزه‌ی UI/UX، طراحی و توسعه سایت و SEO.\nاز طراحی تجربه کاربری تا توسعه وب‌سایت‌های وردپرسی، قالب و افزونه اختصاصی و از سئوی تکنیکال تا استراتژی و رشد در نتایج گوگل، پروژه‌ها را با یک نگاه یکپارچه پیش می‌بریم؛ چون معتقدیم یک وب‌سایت خوب باید هم درست طراحی شود، هم درست توسعه پیدا کند و هم دیده شود.",
+    "job_title": "تیمی متعهد، خوش ذوق، با بیش از ۱۰ سال تجربه در خدمات طراحی و برنامه نویسی سایت و اپلیکیشن، توسعه فوق‌تخصصی وردپرس و طراحی گرافیک ",
+    "gender": "MALE"
+   },
+   "is_online": false,
+   "current_level": {
+    "level": "TOP_FREELANCER",
+    "level_fa": "فریلنسر برتر"
+   }
+  },
+  "skill_category_id": 33,
+  "skill_category": {
+   "id": 33,
+   "title": "طراحی لوگو",
+   "slug": "logo-design",
+   "icon": "",
+   "item_price": {
+    "price": "299000",
+    "discount": 0,
+    "discount_price": 0,
+    "fulltime_discount": 53,
+    "fulltime_discount_price": 2900000,
+    "is_mandatory_fulltime": false
+   }
+  },
+  "basic_delivery_days": 10,
+  "basic_price": 5000000,
+  "display_price": 5000000,
+  "display_time": "10 روز",
+  "freelancer_project_capacity": 8,
+  "description": "تیم حرفه‌ای ما با سال‌ها تجربه در زمینه طراحی لوگو، آماده است تا هویت بصری منحصر به فردی را برای کسب‌وکار شما خلق کند. ما طیف وسیعی از سبک‌های طراحی لوگو را پوشش می‌دهیم و با استفاده از خلاقیت و دانش فنی خود، لوگویی متناسب با برند و اهداف شما طراحی خواهیم کرد. با ما، لوگویی خواهید داشت که نه تنها جذاب و به یاد ماندنی است، بلکه به طور مؤثری ارزش‌ها و شخصیت برندتان را منتقل می‌کند. از طراحی لوگوهای مینیمال و مدرن گرفته تا لوگوهای کلاسیک و پیچیده، ما همه نیازهای شما را برطرف خواهیم کرد. با قیمت‌های مناسب و خدماتی باکیفیت، فرصت را از دست ندهید و به ما بپیوندید تا برندتان را به اوج موفقیت برسانیم.",
+  "deliverable_items": [
+   "فایل لوگو با فرمت های  (Ai,JPG,PNG,SVG)",
+   "موکاپ لوگو",
+   "حالات لایت و دارک لوگو و پالت رنگی برند شما"
+  ],
+  "requirements": [
+   "در ابتدای انجام طراحی در یک فرم با پرسش چند سوال سلیقه شما و خواسته های شما دریافت میشود"
+  ],
+  "industries": [
+   {
+    "id": 3,
+    "title": "برند شخصی"
+   },
+   {
+    "id": 6,
+    "title": "آموزش"
+   },
+   {
+    "id": 9,
+    "title": "املاک"
+   },
+   {
+    "id": 12,
+    "title": "خدمات عمومی"
+   },
+   {
+    "id": 15,
+    "title": "تجارت و کسب و کار"
+   },
+   {
+    "id": 18,
+    "title": "دولتی"
+   },
+   {
+    "id": 21,
+    "title": "صنعتی"
+   },
+   {
+    "id": 24,
+    "title": "غذایی"
+   },
+   {
+    "id": 27,
+    "title": "پزشکی و سلامت"
+   },
+   {
+    "id": 30,
+    "title": "فناوری اطلاعات"
+   },
+   {
+    "id": 33,
+    "title": "کشاورزی"
+   },
+   {
+    "id": 36,
+    "title": "حقوقی"
+   },
+   {
+    "id": 39,
+    "title": "خرده فروشی و کالاهای مصرفی"
+   },
+   {
+    "id": 42,
+    "title": "رسانه و سرگرمی"
+   },
+   {
+    "id": 45,
+    "title": "ورزش و تفریحات"
+   },
+   {
+    "id": 48,
+    "title": "گردشگری"
+   },
+   {
+    "id": 51,
+    "title": "فروش و بازاریابی"
+   },
+   {
+    "id": 54,
+    "title": "مد و زیبایی"
+   },
+   {
+    "id": 57,
+    "title": "معدن"
+   },
+   {
+    "id": 60,
+    "title": "مهندسی و معماری"
+   },
+   {
+    "id": 63,
+    "title": "حمل و نقل و لجستیک"
+   }
+  ],
+  "extra_services": [
+   {
+    "id": 2313,
+    "title": "طراحی لوگو ترکیبی",
+    "description": "بخش دوم لوگو شما (برای لوگوهایی که شامل نماد و لوگوتایپ هستند)",
+    "price": 5000000,
+    "required_time": 10,
+    "required_time_in_day_unit": 10,
+    "time_unit": "DAY",
+    "max_order_allowed": 1,
+    "catalog_id": 762
+   },
+   {
+    "id": 2316,
+    "title": "طراحی کارت ویزیت",
+    "description": "کارت ویزیرت ۲ رو",
+    "price": 1500000,
+    "required_time": 3,
+    "required_time_in_day_unit": 3,
+    "time_unit": "DAY",
+    "max_order_allowed": 1,
+    "catalog_id": 762
+   },
+   {
+    "id": 2319,
+    "title": "طراحی کارت سربرگ",
+    "description": "۲ سایز",
+    "price": 1200000,
+    "required_time": 3,
+    "required_time_in_day_unit": 3,
+    "time_unit": "DAY",
+    "max_order_allowed": 1,
+    "catalog_id": 762
+   },
+   {
+    "id": 2322,
+    "title": "طراحی پاکت",
+    "description": "۲ سایز",
+    "price": 1200000,
+    "required_time": 3,
+    "required_time_in_day_unit": 3,
+    "time_unit": "DAY",
+    "max_order_allowed": 1,
+    "catalog_id": 762
+   }
+  ],
+  "properties": [
+   {
+    "id": 3,
+    "title": "سبک",
+    "is_categorizable": true,
+    "is_boolean": false,
+    "values": [
+     {
+      "id": 3,
+      "title": "مینیمال (Minimalist)",
+      "property_id": 3
+     },
+     {
+      "id": 6,
+      "title": "کاراکتر (Mascot)",
+      "property_id": 3
+     },
+     {
+      "id": 9,
+      "title": "سه‌بعدی (3D)",
+      "property_id": 3
+     },
+     {
+      "id": 12,
+      "title": "امضایی (Signature)",
+      "property_id": 3
+     },
+     {
+      "id": 15,
+      "title": "دست‌نویس (Hand-Drawn)",
+      "property_id": 3
+     },
+     {
+      "id": 18,
+      "title": "وینتیج (Vintage)",
+      "property_id": 3
+     },
+     {
+      "id": 21,
+      "title": "آبرنگی (Watercolor)",
+      "property_id": 3
+     },
+     {
+      "id": 24,
+      "title": "لوگوتایپ (Logotype)",
+      "property_id": 3
+     },
+     {
+      "id": 27,
+      "title": "برندمارک (Brandmark)",
+      "property_id": 3
+     },
+     {
+      "id": 30,
+      "title": "وردمارک (Wordmark)",
+      "property_id": 3
+     },
+     {
+      "id": 33,
+      "title": "لترمارک (Lettermark)",
+      "property_id": 3
+     },
+     {
+      "id": 36,
+      "title": "هندسی (Geometric)",
+      "property_id": 3
+     }
+    ]
+   },
+   {
+    "id": 6,
+    "title": "تعداد اتود اولیه",
+    "is_categorizable": false,
+    "is_boolean": false,
+    "values": [
+     {
+      "id": 48,
+      "title": "5",
+      "property_id": 6
+     }
+    ]
+   },
+   {
+    "id": 9,
+    "title": "تعداد ویرایش (revision)",
+    "is_categorizable": false,
+    "is_boolean": false,
+    "values": [
+     {
+      "id": 96,
+      "title": "5",
+      "property_id": 9
+     }
+    ]
+   }
+  ],
+  "skills": [
+   {
+    "id": 226,
+    "slug": "catalog-design",
+    "title": "طراحی کاتالوگ",
+    "keywords": "طراحی کاتالوگ,",
+    "color": "73470a",
+    "status": "فعال",
+    "status_code": 1
+   },
+   {
+    "id": 236,
+    "slug": "logo-design",
+    "title": "طراحی لوگو",
+    "keywords": "طراحی آرم,لوگو, طراحی لوگو",
+    "color": "a1a1a1",
+    "status": "فعال",
+    "status_code": 1
+   },
+   {
+    "id": 278,
+    "slug": "electrical-engineering",
+    "title": "",
+    "keywords": "مهندسی برق,",
+    "color": "d7ff88",
+    "status": "فعال",
+    "status_code": 1
+   },
+   {
+    "id": 1369,
+    "slug": "office-set-design",
+    "title": "طراحی ست اداری",
+    "keywords": "طراحی ست اداری, Office Set Design",
+    "color": "FBC932",
+    "status": "فعال",
+    "status_code": 1
+   }
+  ],
+  "cover": {
+   "name": "download.jpeg",
+   "url": "https://s3.thr1.sotoon.ir/catalog/12309/download.jpeg"
+  },
+  "work_samples": [
+   {
+    "name": "طراحی لوگوی شبنم سلولز - تولید کننده جعبه",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12312/download.jpeg"
+   },
+   {
+    "name": "طراحی لوگو فیلم تومدیا- وبسایت فیلم",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12315/download.jpeg"
+   },
+   {
+    "name": "طراحی لوگو و کاتالوگ نجار ابزار",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12318/download.jpeg"
+   },
+   {
+    "name": "طراحی لوگوپتوس- حوزه پوشاک",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12321/download.jpeg"
+   },
+   {
+    "name": "طراحی لوگو پوکمون - وبسایت بازی",
+    "url": "https://s3.thr1.sotoon.ir/catalog/12324/download.jpeg"
+   }
+  ],
+  "service": {
+   "id": 33,
+   "title": "طراحی لوگو",
+   "slug": "professional-logo-design",
+   "url": "/services/professional-logo-design",
+   "icon": ""
+  }
+ }
+}

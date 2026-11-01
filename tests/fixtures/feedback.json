@@ -1,0 +1,19 @@
+{
+ "data": {
+  "detailed_averages": {
+   "quality_avg": "4.4667",
+   "communication_avg": "4.7333",
+   "timeline_avg": "4.5333",
+   "expertise_avg": "4.4667",
+   "hire_again_avg": "4.5333"
+  },
+  "stars": {
+   "star_1": 0,
+   "star_2": 0,
+   "star_3": 2,
+   "star_4": 4,
+   "star_5": 9
+  },
+  "success_rate": "95.60"
+ }
+}

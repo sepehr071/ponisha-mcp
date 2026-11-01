@@ -1,0 +1,127 @@
+{
+ "data": {
+  "user": {
+   "user_id": 754169,
+   "username": "rohammasmoei",
+   "avatar": "https://s3.thr1.sotoon.ir/usercontent/754169/iE3JwDiDbE9Ohrk7TXP4mI2AxJ2tV1yDl9eBXGQ5.png",
+   "followers": 3,
+   "verified": true,
+   "rank": 0,
+   "timezone": "Asia/Tehran",
+   "type": "فریلنسر",
+   "plan": "bronze",
+   "is_pro": false,
+   "pro_plan": null,
+   "registered_at": 1659155967,
+   "is_online": false,
+   "last_activity": "2026-10-31 20:12:04",
+   "is_sponsored": false,
+   "current_level": {
+    "level": "LEVEL_2_FREELANCER",
+    "level_fa": "فریلنسر سطح ۲"
+   }
+  },
+  "profile": {
+   "languages": [
+    1
+   ],
+   "name_verified": "تایید شده",
+   "city": {
+    "name": "Tehran",
+    "id": 112931
+   },
+   "marriage_status": null,
+   "birth_date": 803952000,
+   "job_description": "رهام مسموعی (علی)\nطراح گرافیست مسلط به نرم افزار Illustrator& photoshop و ...\nطراحی سه بعدی، رندر، عکاسی صنعتی و ...",
+   "job_title": "عكاس صنعتي،طراحي فرم اداري،طراحي ليبل،مدل سازي ٣بعدي،تصوير سازي،طراحي كاتالوگ",
+   "gender": "MALE"
+  },
+  "vacation": null,
+  "cover": null,
+  "skills": [
+   {
+    "id": 226,
+    "title": "طراحی کاتالوگ",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 229,
+    "title": "طراحی گرافیک",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 232,
+    "title": "ایلوستریتور (Adobe Illustrator)",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 233,
+    "title": "ادوبی این دیزاین (InDesign)",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 236,
+    "title": "طراحی لوگو",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 240,
+    "title": "عکاسی",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 241,
+    "title": "فوتوشاپ (Photoshop)",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 242,
+    "title": "طراحی پوستر",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 1369,
+    "title": "طراحی ست اداری",
+    "category_id": 3,
+    "count": null
+   },
+   {
+    "id": 1385,
+    "title": "طراحی ۳ بعدی",
+    "category_id": 3,
+    "count": null
+   }
+  ],
+  "statistics": {
+   "completed_projects_count": 23,
+   "total_score": 275,
+   "portfolio_like_count": 31,
+   "feedback_count": 15,
+   "feedback_rate": 4.546666666666667,
+   "portfolio_views": 0,
+   "profile_views": 182,
+   "portfolios_count": {
+    "ALL": 57
+   },
+   "active_projects_count": 4,
+   "created_projects_count": 0
+  },
+  "is_follow": null,
+  "avatar": {
+   "url": "https://s3.thr1.sotoon.ir/usercontent/754169/iE3JwDiDbE9Ohrk7TXP4mI2AxJ2tV1yDl9eBXGQ5.png",
+   "id": null,
+   "status": "APPROVED"
+  },
+  "is_me": false,
+  "response_rate": 12,
+  "expert_items": []
+ }
+}

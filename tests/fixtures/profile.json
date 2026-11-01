@@ -1,0 +1,58 @@
+{
+ "data": {
+  "user": {
+   "user_id": 3650403,
+   "username": "Nexdigital",
+   "avatar": "https://s3.thr1.sotoon.ir/usercontent/3650403/vTUKLlSsgQnRP4pwLKtXO9E12Rq01edlV7ID6oon.png",
+   "followers": 1,
+   "verified": true,
+   "rank": 0,
+   "timezone": null,
+   "type": "کارفرما",
+   "plan": "free",
+   "is_pro": false,
+   "pro_plan": null,
+   "registered_at": 1754316093,
+   "is_online": false,
+   "last_activity": "2026-10-31 20:07:14",
+   "is_sponsored": false,
+   "current_level": null
+  },
+  "profile": {
+   "languages": null,
+   "name_verified": "تایید شده",
+   "city": null,
+   "marriage_status": null,
+   "birth_date": 683856000,
+   "job_description": "نکس دیجیتال استودیو",
+   "job_title": null,
+   "gender": null
+  },
+  "vacation": null,
+  "cover": null,
+  "skills": [],
+  "statistics": {
+   "completed_projects_count": 2,
+   "total_score": 0,
+   "portfolio_like_count": 0,
+   "feedback_count": 3,
+   "feedback_rate": 5,
+   "portfolio_views": 0,
+   "profile_views": 0,
+   "portfolios_count": {
+    "ALL": 0
+   },
+   "active_projects_count": 1,
+   "created_projects_count": 3
+  },
+  "is_follow": null,
+  "avatar": {
+   "url": "https://s3.thr1.sotoon.ir/usercontent/3650403/vTUKLlSsgQnRP4pwLKtXO9E12Rq01edlV7ID6oon.png",
+   "id": null,
+   "status": "APPROVED"
+  },
+  "is_me": false,
+  "response_rate": 1,
+  "expert_items": []
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "data": [
+  {
+   "id": 761346,
+   "title": "طراحی وکتور و آماده‌سازی فایل برش کاترپلاتر استیکر",
+   "slug": "طراحی-وکتور-و-آماده‌سازی-فایل-برش-کاترپلاتر-استیکر",
+   "user_id": 3339081,
+   "date": 1791800466,
+   "status": "BIDDING_CLOSED",
+   "status_code": 40,
+   "created_at": 1791799037,
+   "priority_id": 3,
+   "priority": "ترکیبی از قیمت و کیفیت اهمیت دارد.",
+   "promotions": [],
+   "skills": [
+    {
+     "id": 232,
+     "slug": "adobe-illustrator",
+     "title": "ایلوستریتور (Adobe Illustrator)",
+     "keywords": "Illustrator,ایلیستریتور, ادوبی ایلاستریتر",
+     "color": "c3c3c3",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 233,
+     "slug": "adobe-indesign",
+     "title": "ادوبی این دیزاین (InDesign)",
+     "keywords": "InDesign,این دیزاین, ادوبی این‌دیزاین",
+     "color": "bbbbbb",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 236,
+     "slug": "logo-design",
+     "title": "طراحی لوگو",
+     "keywords": "طراحی آرم,لوگو, طراحی لوگو",
+     "color": "a1a1a1",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 241,
+     "slug": "adobe-photoshop",
+     "title": "فوتوشاپ (Photoshop)",
+     "keywords": "فتوشاپ,Adobe Photoshop, ادوبی فوتوشاپ",
+     "color": "777777",
+     "status": "فعال",
+     "status_code": 1
+    }
+   ]
+  },
+  {
+   "id": 733562,
+   "title": "طراحی پاورپوینت دارویی",
+   "slug": "طراحی-پاورپوینت-دارویی",
+   "user_id": 3792243,
+   "date": 1780999653,
+   "status": "تمام شده",
+   "status_code": 100,
+   "created_at": 1780990221,
+   "priority_id": 2,
+   "priority": "کیفیت بیشترین اهمیت را دارد.",
+   "promotions": [],
+   "skills": [
+    {
+     "id": 182,
+     "slug": "microsoft-powerpoint",
+     "title": "پاورپوینت (Power Point)",
+     "keywords": "پاور پوینت,",
+     "color": "650d04",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 229,
+     "slug": "graphic-design",
+     "title": "طراحی گرافیک",
+     "keywords": "طراحی گرافیک,",
+     "color": "442a06",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 241,
+     "slug": "adobe-photoshop",
+     "title": "فوتوشاپ (Photoshop)",
+     "keywords": "فتوشاپ,Adobe Photoshop, ادوبی فوتوشاپ",
+     "color": "777777",
+     "status": "فعال",
+     "status_code": 1
+    }
+   ]
+  },
+  {
+   "id": 733385,
+   "title": "طراحی بصری ارایه پیشنهاد طرح کسب وکار - طراحی صفحات",
+   "slug": "طراحی-بصری-ارایه-پیشنهاد-طرح-کسب-وکار---طراحی-صفحات",
+   "user_id": 63824,
+   "date": 1781119743,
+   "status": "تمام شده",
+   "status_code": 100,
+   "created_at": 1780932995,
+   "priority_id": 3,
+   "priority": "ترکیبی از قیمت و کیفیت اهمیت دارد.",
+   "promotions": [],
+   "skills": [
+    {
+     "id": 227,
+     "slug": "format-and-layout",
+     "title": "فرمت و طرح بندی",
+     "keywords": "فرمت و طرح بندی,",
+     "color": "FF0000",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 229,
+     "slug": "graphic-design",
+     "title": "طراحی گرافیک",
+     "keywords": "طراحی گرافیک,",
+     "color": "442a06",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 241,
+     "slug": "adobe-photoshop",
+     "title": "فوتوشاپ (Photoshop)",
+     "keywords": "فتوشاپ,Adobe Photoshop, ادوبی فوتوشاپ",
+     "color": "777777",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 1227,
+     "slug": "magazine-layout",
+     "title": "طراحی مجله",
+     "keywords": "Magazine Layout, طراحی مجله",
+     "color": "0ABC38",
+     "status": "فعال",
+     "status_code": 1
+    },
+    {
+     "id": 1249,
+     "slug": "presentation-design",
+     "title": "طراحی پرزنتیشن",
+     "keywords": "Presentation Design, طراحی پرزنتیشن",
+     "color": "DBE5C0",
+     "status": "فعال",
+     "status_code": 1
+    }
+   ]
+  }
+ ],
+ "meta": {
+  "pagination": {
+   "total_items": 23,
+   "total_pages": 8,
+   "current_page": 1,
+   "per_page": 3
+  }
+ }
+}
