@@ -18,14 +18,14 @@ TEHRAN = timezone(timedelta(hours=3, minutes=30))
 Skills = Annotated[
     list[str] | None,
     Field(
-        description="Skills to require, as names, slugs or ids from pn_skills (e.g. ['python', 'wordpress']). Projects/freelancers must have ALL of them.",
+        description="Skill names, slugs or ids from pn_skills; ALL required.",
         max_length=5,
     ),
 ]
-Limit = Annotated[int, Field(description="How many results to return (max 50).", ge=1, le=50)]
-Page = Annotated[int, Field(description="Result page, starting at 1.", ge=1, le=200)]
-ProjectId = Annotated[int, Field(description="Numeric project id from pn_search_projects, e.g. 762909.", ge=1)]
-Username = Annotated[str, Field(description="Ponisha username, e.g. rohammasmoei.", pattern=r"^[A-Za-z0-9_.-]{2,64}$")]
+Limit = Annotated[int, Field(description="Results per page.", ge=1, le=50)]
+Page = Annotated[int, Field(description="Page, from 1.", ge=1, le=200)]
+ProjectId = Annotated[int, Field(description="Project id.", ge=1)]
+Username = Annotated[str, Field(description="Ponisha username.", pattern=r"^[A-Za-z0-9_.-]{2,64}$")]
 
 # Sort ids of ponisha.ir's project list (sort|order of its dropdown).
 PROJECT_SORT = {
@@ -108,36 +108,26 @@ async def _category_id(cat: str) -> str:
 async def pn_search_projects(
     query: Annotated[
         str,
-        Field(
-            description="Free text in Persian or English, e.g. 'طراحی لوگو' or 'django'. Empty = all.", max_length=200
-        ),
+        Field(description="Persian or English text. Empty = all.", max_length=200),
     ] = "",
     skills: Skills = None,
-    category: Annotated[
-        str | None, Field(description="Top-level category slug or id from pn_categories, e.g. dev-and-it.")
-    ] = None,
+    category: Annotated[str | None, Field(description="Top-level category slug or id from pn_categories.")] = None,
     status: Annotated[
         Literal["open", "all"],
-        Field(description="open = still taking bids (default); all includes finished and closed projects."),
+        Field(description="open = taking bids; all adds finished/closed."),
     ] = "open",
-    min_budget: Annotated[
-        int | None, Field(description="Keep projects whose budget range reaches at least this (Toman).", ge=0)
-    ] = None,
-    max_budget: Annotated[
-        int | None, Field(description="Keep projects whose budget range starts at or below this (Toman).", ge=0)
-    ] = None,
+    min_budget: Annotated[int | None, Field(description="Budget range reaches at least this (Toman).", ge=0)] = None,
+    max_budget: Annotated[int | None, Field(description="Budget range starts at or below this (Toman).", ge=0)] = None,
     sort: Annotated[
         Literal["newest", "oldest", "ending_soon", "most_time_left", "most_bids", "fewest_bids", "most_viewed"],
-        Field(description="Order of results; ending_soon = bidding closes first."),
+        Field(description="ending_soon = bidding closes first."),
     ] = "newest",
     page: Page = 1,
     limit: Limit = 20,
 ) -> dict:
-    """Search Ponisha projects (Iran's freelance marketplace) by text, skills, category, status and budget.
+    """Search Ponisha projects by text, skills, category, status and budget.
 
-    Use this to find work to bid on or to see what employers ask for. Results are compact cards; call pn_project
-    for the full brief and competition, pn_bids for the offers already made. Budget filters are applied to the
-    fetched page (the site has none), so with a budget filter up to 50 projects per page are scanned.
+    Returns cards; next pn_project or pn_bids. Budget filters apply client-side to up to 50 projects per page.
     """
     sort_key, order = PROJECT_SORT[sort]
     filtered = min_budget is not None or max_budget is not None
@@ -206,11 +196,8 @@ def _person(u: dict) -> dict:
 async def pn_project(project_id: ProjectId, include_bid_sample: bool = False) -> dict:
     """Get one Ponisha project: full description, budget, skills, deadline and the employer's track record.
 
-    Use after pn_search_projects. The employer block (projects created/completed, rating, member since) shows
-    whether the employer pays and finishes work. A finished project also shows accepted_price (what the winner was
-    paid) and done_by. Set include_bid_sample=true for price statistics of the first 20 offers (slow on projects
-    with many bids: Ponisha takes up to 30 s); pn_bids lists the offers themselves, pn_reviews the employer's
-    reviews, pn_user_projects the employer's other projects.
+    Use after pn_search_projects. Finished projects add accepted_price and done_by. include_bid_sample=true adds
+    price stats of the first 20 offers (slow, up to 30 s).
     """
     d = (await fetch(f"{API}/projects/{project_id}"))["data"]
     emp = d.get("employer") or {}
@@ -266,13 +253,11 @@ async def pn_project(project_id: ProjectId, include_bid_sample: bool = False) ->
 async def pn_bids(
     project_id: ProjectId,
     page: Page = 1,
-    limit: Annotated[int, Field(description="Offers per page (max 30).", ge=1, le=30)] = 10,
+    limit: Annotated[int, Field(description="Per page.", ge=1, le=30)] = 10,
 ) -> dict:
-    """List the offers freelancers made on a Ponisha project: price, days, pitch and each bidder's track record.
+    """List the offers on a Ponisha project: price (Toman), days, pitch and each bidder's track record.
 
-    Use to see the competition on a project before bidding or to compare bidders. Prices are Toman. Bidder
-    names link to pn_profile. Ponisha serves these slowly (about 3 s, up to 30 s on projects with 100+ bids), so
-    keep limit small; page through with `page`.
+    Slow (3-30 s on projects with many bids): keep limit small.
     """
     r = await fetch(f"{API}/projects/{project_id}/bids", BIDS_PAGE | {"per_page": limit, "page": page})
     pg = r["meta"]["pagination"]
@@ -299,29 +284,21 @@ async def pn_bids(
 
 @tool("Search freelancers")
 async def pn_search_freelancers(
-    query: Annotated[
-        str, Field(description="Free text, e.g. 'python' or 'گرافیست'. Empty = all.", max_length=200)
-    ] = "",
+    query: Annotated[str, Field(description="Text. Empty = all.", max_length=200)] = "",
     skills: Skills = None,
     level: Annotated[
         Literal["any", "1", "2", "top"],
-        Field(description="Exact level: 1 (level 1), 2 (level 2), top (Ponisha's top freelancers); any = no filter."),
+        Field(description="Exact level; top = Ponisha's top freelancers."),
     ] = "any",
-    has_portfolio: Annotated[bool, Field(description="Only freelancers with portfolio items.")] = False,
-    sort: Annotated[
-        Literal["rating", "default"], Field(description="rating = by total score, highest first.")
-    ] = "rating",
+    has_portfolio: Annotated[bool, Field(description="Only with portfolio items.")] = False,
+    sort: Annotated[Literal["rating", "default"], Field(description="rating = total score, highest first.")] = "rating",
     page: Page = 1,
     limit: Limit = 10,
-    category: Annotated[
-        str | None, Field(description="Top-level category slug or id from pn_categories, e.g. design-and-creativity.")
-    ] = None,
+    category: Annotated[str | None, Field(description="Top-level category slug or id from pn_categories.")] = None,
 ) -> dict:
     """Search Ponisha freelancers by text, skills, category, level and portfolio, ranked by score.
 
-    Use to find who to hire or to see who leads a niche. Cards carry score, average rating and review count;
-    call pn_profile for the full profile, pn_reviews for what employers wrote, pn_portfolios for their work.
-    Rating is the average employer score (max 5). The site has no city filter.
+    Cards carry score, rating (0-5) and review count; next pn_profile. No city filter exists.
     """
     filters: dict[str, Any] = {}
     if skills:
@@ -367,15 +344,11 @@ async def pn_search_freelancers(
 @tool("User profile")
 async def pn_profile(
     username: Username,
-    include_resume: Annotated[
-        bool, Field(description="Also return the work/education history the user listed.")
-    ] = False,
+    include_resume: Annotated[bool, Field(description="Add work/education history.")] = False,
 ) -> dict:
     """Get a public Ponisha profile (freelancer or employer): level, skills, statistics, rating and activity.
 
-    Use for a username from pn_search_freelancers, pn_bids or pn_project. Shows completed projects, rating,
-    response rate, member since and last seen; include_resume adds their work history. Next: pn_reviews,
-    pn_portfolios, pn_user_projects. Private data (contact, real name) is not available.
+    Next: pn_reviews, pn_portfolios, pn_user_projects. No contact data.
     """
     d = (await fetch(f"{API}/users/{username}/profile"))["data"]
     u, p, s = d["user"], d.get("profile") or {}, d.get("statistics") or {}
@@ -425,17 +398,16 @@ async def pn_skills(
     query: Annotated[
         str,
         Field(
-            description="Part of a skill name or slug, Persian or English, e.g. 'پایتون' or 'logo'.",
+            description="Part of a skill name or slug, Persian or English.",
             min_length=1,
             max_length=60,
         ),
     ],
-    limit: Annotated[int, Field(description="Max skills to return.", ge=1, le=50)] = 20,
+    limit: Annotated[int, Field(description="Max skills.", ge=1, le=50)] = 20,
 ) -> dict:
-    """Find Ponisha skills (about 700 tags) by name to use in the skills filters of other tools.
+    """Find Ponisha skills (about 700 tags) by name for the skills filters of other tools.
 
-    Use first when the user names a skill; pass the returned slug or id as `skills` to pn_search_projects,
-    pn_search_freelancers or pn_market.
+    Pass the returned slug or id as `skills`.
     """
     q = query.strip().lower()
     hits = [s for s in await _skill_list() if q in f"{s['slug']} {s['title'] or ''}".lower()]
@@ -447,17 +419,12 @@ async def pn_skills(
 
 @tool("Categories")
 async def pn_categories(
-    slug: Annotated[
-        str | None, Field(description="A top-level category slug to list its sub-categories; omit for the top level.")
-    ] = None,
-    with_counts: Annotated[
-        bool, Field(description="Add open and all-time project counts per top-level category (14 searches).")
-    ] = False,
+    slug: Annotated[str | None, Field(description="Top-level slug: list its sub-categories.")] = None,
+    with_counts: Annotated[bool, Field(description="Add project counts per category (14 searches).")] = False,
 ) -> dict:
     """List Ponisha's top-level project categories, or the sub-categories of one.
 
-    Use to get the `category` value for pn_search_projects and pn_search_freelancers (top level only;
-    sub-categories are for reference). with_counts shows which categories have the most open and total projects.
+    Top-level slugs/ids are the `category` value of the search tools.
     """
     if slug:
         d = (await fetch(f"{API}/categories/subs-with-slug/{slug}"))["data"]
@@ -498,9 +465,7 @@ async def pn_market(
 ) -> dict:
     """Summarize demand and supply for one skill on Ponisha: open projects, budgets, competition, related skills.
 
-    Use for "is it worth bidding on X", "what do X projects pay" or "how crowded is X". Based on the 50 newest
-    open projects with that skill (budgets in Toman, medians of the project budget midpoints) and the freelancer
-    count for the skill.
+    Based on the 50 newest open projects (budgets in Toman, medians of midpoints) and the freelancer count.
     """
     sid = (await _skill_ids([skill]))[0]
     pbody = {
@@ -546,20 +511,16 @@ def _project_ref(p: dict) -> dict:
 async def pn_reviews(
     username: Annotated[
         str | None,
-        Field(description="Reviews received by this user, e.g. rohammasmoei.", pattern=r"^[A-Za-z0-9_.-]{2,64}$"),
+        Field(description="Reviews received by this user.", pattern=r"^[A-Za-z0-9_.-]{2,64}$"),
     ] = None,
-    skill: Annotated[
-        str | None, Field(description="Instead of a user: recent reviews across one skill (name, slug or id).")
-    ] = None,
+    skill: Annotated[str | None, Field(description="Instead of username: recent reviews for a skill.")] = None,
     page: Page = 1,
-    limit: Annotated[int, Field(description="Reviews per page (max 30).", ge=1, le=30)] = 10,
+    limit: Annotated[int, Field(description="Per page.", ge=1, le=30)] = 10,
 ) -> dict:
     """Read the reviews employers wrote about a Ponisha user, or recent reviews for a whole skill.
 
-    Give exactly one of username or skill. For a user it also returns the score summary (star counts, quality,
-    communication, timeline, expertise, hire-again averages, success rate): use it to judge a freelancer before
-    hiring or an employer before bidding. For a skill it shows what employers praise or complain about in that
-    field (only the newest 2000 reviews are reachable). Next: pn_profile, pn_project.
+    Give exactly one of username or skill. A user also gets a score summary (stars, averages, success rate).
+    Skill mode reaches the newest 2000 reviews.
     """
     if bool(username) == bool(skill):
         raise ApiError("Give exactly one of username or skill.")
@@ -617,23 +578,19 @@ def _plain(text: str | None, n: int = 240) -> str | None:
 
 @tool("Portfolios")
 async def pn_portfolios(
-    query: Annotated[str, Field(description="Free text, e.g. 'طراحی لوگو'. Empty = all.", max_length=200)] = "",
+    query: Annotated[str, Field(description="Text. Empty = all.", max_length=200)] = "",
     skills: Skills = None,
-    category: Annotated[
-        str | None, Field(description="Top-level category slug or id from pn_categories (search mode only).")
-    ] = None,
+    category: Annotated[str | None, Field(description="Category slug or id (search mode only).")] = None,
     username: Annotated[
         str | None,
         Field(description="List this user's portfolio instead of searching.", pattern=r"^[A-Za-z0-9_.-]{2,64}$"),
     ] = None,
     page: Page = 1,
-    limit: Annotated[int, Field(description="Items per page (max 30).", ge=1, le=30)] = 10,
+    limit: Annotated[int, Field(description="Per page.", ge=1, le=30)] = 10,
 ) -> dict:
     """Search Ponisha portfolio items (about 500k work samples), or list one user's portfolio.
 
-    Use to see real examples of a kind of work or to check what a freelancer has built. Search is ranked by
-    Ponisha's quality score; items carry views, likes, skills and the author. With username, query/skills are
-    ignored and the user's items are listed (title and link only). Next: pn_profile for the author.
+    Search is ranked by quality score. With username, query/skills are ignored and only titles and links return.
     """
     if username:
         r = await fetch(f"{API}/users/{username}/portfolio/list", {"paginated": "1", "per_page": limit, "page": page})
@@ -698,29 +655,23 @@ def _service_card(c: dict) -> dict:
 
 @tool("Service packages")
 async def pn_services(
-    query: Annotated[
-        str, Field(description="Words that must appear in the name or description. Empty = all.", max_length=100)
-    ] = "",
+    query: Annotated[str, Field(description="Words in name or description. Empty = all.", max_length=100)] = "",
     category: Annotated[
         str | None, Field(description="Service category slug, id or name part, e.g. logo-design (see `categories`).")
     ] = None,
-    min_price: Annotated[int | None, Field(description="Cheapest package price (Toman).", ge=0)] = None,
-    max_price: Annotated[int | None, Field(description="Most expensive package price (Toman).", ge=0)] = None,
-    min_rating: Annotated[
-        float | None, Field(description="Minimum seller rating (e.g. 4.5, max 5).", ge=0, le=5)
-    ] = None,
+    min_price: Annotated[int | None, Field(description="Min package price (Toman).", ge=0)] = None,
+    max_price: Annotated[int | None, Field(description="Max package price (Toman).", ge=0)] = None,
+    min_rating: Annotated[float | None, Field(description="Min seller rating (0-5).", ge=0, le=5)] = None,
     sort: Annotated[
         Literal["popular", "price_low", "price_high", "rating"],
-        Field(description="popular = most finished projects first."),
+        Field(description="popular = most finished projects."),
     ] = "popular",
     page: Page = 1,
-    limit: Annotated[int, Field(description="Packages per page (max 30).", ge=1, le=30)] = 10,
+    limit: Annotated[int, Field(description="Per page.", ge=1, le=30)] = 10,
 ) -> dict:
-    """Browse Ponisha's ready-made service packages (fixed-price offers such as logo design or WordPress themes).
+    """Browse Ponisha's ready-made fixed-price service packages (logo design, WordPress themes, ...).
 
-    Use when the user wants to buy a defined service at a known price instead of posting a project. About 80
-    packages exist in a few categories. Prices are Toman. Next: pn_service for deliverables and add-ons,
-    pn_profile for the seller.
+    About 80 packages; prices in Toman. Next: pn_service.
     """
     q: dict[str, Any] = {"order_by": SERVICE_SORT[sort][0], "sort_by": SERVICE_SORT[sort][1], "per_page": 50}
     for key, val in (("basic_price_min", min_price), ("basic_price_max", max_price), ("score", min_rating)):
@@ -728,8 +679,9 @@ async def pn_services(
             q[f"filter[{key}]"] = val
     first = await fetch(f"{API}/catalogs", q | {"page": 1})
     rows = first["data"]
-    for n in range(2, first["meta"]["pagination"]["total_pages"] + 1):
-        rows += (await fetch(f"{API}/catalogs", q | {"page": n}))["data"]
+    last = first["meta"]["pagination"]["total_pages"]
+    for r in await asyncio.gather(*(fetch(f"{API}/catalogs", q | {"page": n}) for n in range(2, last + 1))):
+        rows += r["data"]
     cats: dict[int, dict] = {}
     for c in rows:
         k = (c.get("skill_category") or {}).get("id")
@@ -758,11 +710,8 @@ async def pn_services(
 
 
 @tool("Service package details")
-async def pn_service(service_id: Annotated[int, Field(description="Package id from pn_services.", ge=1)]) -> dict:
-    """Get one Ponisha service package: price, delivery time, what is included, requirements and paid add-ons.
-
-    Use after pn_services to compare what a fixed-price offer really delivers. Prices are Toman.
-    """
+async def pn_service(service_id: Annotated[int, Field(description="Package id.", ge=1)]) -> dict:
+    """Get one Ponisha service package: price (Toman), delivery time, inclusions, requirements and add-ons."""
     c = (await fetch(f"{API}/catalogs/{service_id}"))["data"]
     return _service_card(c) | {
         "description": _plain(c.get("description"), 1500),
@@ -785,15 +734,14 @@ async def pn_user_projects(
     username: Username,
     status: Annotated[
         Literal["finished", "open"],
-        Field(description="finished = completed projects (default); open = still taking bids."),
+        Field(description="finished = completed; open = taking bids."),
     ] = "finished",
     page: Page = 1,
     limit: Annotated[int, Field(description="Projects per page (max 30).", ge=1, le=30)] = 10,
 ) -> dict:
-    """List the projects a Ponisha user is attached to: an employer's own projects or a freelancer's finished work.
+    """List the projects a Ponisha user is attached to: an employer's own or a freelancer's finished work.
 
-    Use to check an employer's history (what they ask for, how many finish) or what a freelancer has delivered.
-    Call pn_project with an id for the full brief and the accepted price.
+    Next: pn_project for the brief and accepted price.
     """
     code = {"finished": 100, "open": 30}[status]
     r = await fetch(
@@ -822,16 +770,12 @@ async def pn_user_projects(
 @tool("Skill trend")
 async def pn_trend(
     skill: Annotated[str, Field(description="One skill name, slug or id from pn_skills.", max_length=60)],
-    points: Annotated[
-        int, Field(description="How many moments in history to sample (each 50 projects).", ge=2, le=8)
-    ] = 5,
+    points: Annotated[int, Field(description="History samples (50 projects each).", ge=2, le=8)] = 5,
 ) -> dict:
-    """Show how demand and budgets for one skill changed over time on Ponisha, from the newest to the oldest projects.
+    """Show how demand and budgets for one skill changed over time on Ponisha, newest to oldest.
 
-    Use for "is demand for X growing" or "what did X pay a year ago". Samples `points` pages of 50 projects spread
-    across the skill's whole history (all statuses) and reports, per sample, the period covered, the posting rate
-    per month, the median budget and the median bids. Budgets are Toman; the newest 10000 projects are reachable.
-    For today's numbers use pn_market.
+    Samples `points` pages of 50 projects (all statuses) across the newest 10000: period, posts per month, median
+    budget (Toman) and bids. For today's numbers use pn_market.
     """
     sid = (await _skill_ids([skill]))[0]
 
@@ -850,8 +794,9 @@ async def pn_trend(
     total, pages = first["meta"]["pagination"]["total_items"], first["meta"]["pagination"]["total_pages"]
     wanted = sorted({round(1 + i * (pages - 1) / (points - 1)) for i in range(points)}) if pages > 1 else [1]
     out = []
+    fetched = await asyncio.gather(*(sample(n) for n in wanted if n != 1))
     for n in wanted:
-        rows = first["data"] if n == 1 else (await sample(n))["data"]
+        rows = first["data"] if n == 1 else fetched.pop(0)["data"]
         times = [t / 1000 if t > 1e11 else t for t in (p.get("approved_at") for p in rows) if t]
         mids = [(p["amount_min"] + p["amount_max"]) / 2 for p in rows if p.get("amount_max")]
         days = max((max(times) - min(times)) / 86400, 1) if times else None
